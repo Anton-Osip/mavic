@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>MAVIC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
@@ -14,13 +20,11 @@
 
   <body>
     @@include('blocks/header.html')
-  	@@include('blocks/top.html')
-    @@include('blocks/products.html') 
-	@@include('blocks/benefits.html')
-    @@include('blocks/specification.html') 
-	@@include('blocks/questions.html') 
-	@@include('blocks/contacts.html') 
-	@@include('blocks/footer.html') 
+    <main id="fullPage">
+      @@include('blocks/top.html') @@include('blocks/products.html')
+      @@include('blocks/benefits.html') @@include('blocks/specification.html')
+      @@include('blocks/questions.html') @@include('blocks/contacts.html')
+    </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- <script src="js/libs.min.js"></script> -->
     <script src="js/main.js"></script>

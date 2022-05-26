@@ -1,0 +1,71 @@
+.specification {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+  }
+
+  &__item--center {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  &__box {
+    width: 280px;
+    position: relative;
+    margin-top: 10px;
+    &::before {
+      content: "";
+      position: absolute;
+      background-position: 0 0;
+    }
+  }
+  &__box-2 {
+    margin-top: 140px;
+  }
+  &__box-4 {
+    margin-top: 160px;
+  }
+  &__box-1::before {
+    background: url("../../img/icon/pointer-1.svg") no-repeat / contain;
+    width: 229px;
+    height: 115px;
+    right: -140px;
+    top: 23px;
+  }
+  &__box-2::before {
+    background: url("../../img/icon/pointer-2.svg") no-repeat / contain;
+    width: 346px;
+    height: 81px;
+    right: -308px;
+    top: -65px;
+  }
+  &__box-3::before {
+    background: url("../../img/icon/pointer-3.svg") no-repeat / contain;
+    width: 258px;
+    height: 103px;
+    left: -300px;
+    top: 16px;
+  }
+  &__box-4::before {
+    background: url("../../img/icon/pointer-4.svg") no-repeat / contain;
+    width: 124px;
+    height: 89px;
+    left: -172px;
+    top: -73px;
+  }
+
+  &__box-title {
+    font-size: 21px;
+    line-height: 28px;
+    @extend %ubuntu-Bold;
+    margin-bottom: 10px;
+  }
+
+  &__box-text {
+    font-size: 15px;
+    line-height: 18px;
+    @extend %ubuntu-lightd;
+  }
+}

@@ -1,0 +1,131 @@
+.contacts {
+  &__inner {
+    display: flex;
+  }
+
+  &__info {
+    width: 240px;
+    margin-right: 60px;
+    padding-left: 25px;
+  }
+
+  &__info-box {
+    margin-bottom: 30px;
+  }
+
+  &__info-title {
+    line-height: 24px;
+    font-size: 21px;
+    @extend %ubuntu-Bold;
+    margin-bottom: 13px;
+  }
+  &__info-email,
+  &__info-phone {
+    line-height: 18px;
+    font-size: 15px;
+  }
+  &__info-email:hover {
+    text-decoration: underline;
+  }
+
+  &__form {
+    width: 570px;
+    margin-right: 106px;
+  }
+
+  &__form-title {
+    line-height: 24px;
+    font-size: 21px;
+    @extend %ubuntu-Bold;
+    margin-bottom: 14px;
+  }
+
+  &__form-text {
+    line-height: 18px;
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  &__form-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  &__form-textarea,
+  &__form-input {
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0.95;
+    padding: 15px;
+    border: none;
+    outline: none;
+    @extend %ubuntu-Reguler;
+    color: #fff;
+    line-height: 15px;
+    font-size: 13px;
+    &::placeholder {
+      color: #ffffff;
+      opacity: 0.4;
+    }
+  }
+  &__form-input {
+    width: 49%;
+  }
+  &__form-textarea {
+    min-height: 144px;
+    width: 100%;
+    resize: none;
+    margin-bottom: 20px;
+  }
+
+  &__form-btn {
+    text-transform: uppercase;
+    @extend %ubuntu-Bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    border-radius: 2px;
+    border: 1px solid #fff;
+    padding: 9px 15px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      color: #1c1c1c;
+      background-color: #fff;
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__social-link {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__social-item {
+    margin: 14px 0;
+  }
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 32px;
+  &__copy {
+    text-align: right;
+    @extend %ubuntu-lightd;
+    font-size: 13px;
+    line-height: 15px;
+    color: #ffffff;
+    opacity: 0.64;
+  }
+}

@@ -44,5 +44,8 @@
     "app/html/**/*.html",
     "app/scss/**/*.scss"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "fullpage.js": "^4.0.8",
+    "swiper": "^8.1.5"
+  }
 }
