@@ -1,26 +1,35 @@
 <header class="header">
   <div class="container">
-    <div class="header__inner">
-      <a href="#top" class="logo">
-        <img src="../../img/logo/logo.png" alt="Mavic 2 Pro" class="logo__img" />
-        <img src="../../img/logo/logo-mobile.png" alt="Mavic 2 Pro" class="logo__img-mobile" />
-      </a>
+    <div class="header__inner" id="header__navigation">
+      <div data-menuanchor="top">
+        <a href="#top" class="logo">
+          <img src="../../img/logo/logo.png" alt="Mavic 2 Pro" class="logo__img"/>
+          <img src="../../img/logo/logo-mobile.png" alt="Mavic 2 Pro" class="logo__img-mobile"/>
+        </a>
+      </div>
+      
       <nav class="menu">
+        <button class="menu__btn">
+          <span class="menu__btn-line"></span>
+        </button>
         <ul class="menu__list">
-          <li class="menu__list-item">
+          <li class="menu__list-item" data-menuanchor="products">
             <a href="#products" class="menu__list-link">О ДРОНЕ</a>
           </li>
-          <li class="menu__list-item">
+          <li class="menu__list-item" data-menuanchor="benefits">
             <a href="#benefits" class="menu__list-link">ПРЕИМУЩЕСТВА</a>
           </li>
-          <li class="menu__list-item">
+          <li class="menu__list-item"data-menuanchor="specification">
             <a href="#specification" class="menu__list-link">ХАРАКТЕРИСТИКИ</a>
           </li>
-          <li class="menu__list-item">
+          <li class="menu__list-item"data-menuanchor="questions">
             <a href="#questions" class="menu__list-link">ВОПРОСЫ</a>
           </li>
-          <li class="menu__list-item">
+          <li class="menu__list-item"data-menuanchor="contacts">
             <a href="#contacts" class="menu__list-link">КОНТАКТЫ</a>
+          </li>
+          <li class="menu__list-phone">
+            <a href="tel:80505676767" class="header__phone-menu">8 (050) 567 67 67</a>
           </li>
         </ul>
       </nav>

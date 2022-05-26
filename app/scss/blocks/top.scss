@@ -39,8 +39,6 @@
     max-width: 325px;
     margin: 25px 0 35px;
   }
-  &__social-list {
-  }
   &__social-item {
     display: inline-block;
     margin: 0 25px;
@@ -51,5 +49,29 @@
     &:hover {
       opacity: 1;
     }
+  }
+}
+@media (max-width: 1366px) {
+  .top__title {
+    font-size: 75px;
+    line-height: 90px;
+    margin-bottom: 20px;
+  }
+  .top__inner img {
+    width: 80%;
+  }
+  .top__text {
+    margin: 15px 0 25px;
+  }
+}
+@media (max-width: 540px) {
+  .top__title {
+    display: none;
+  }
+  .top__text {
+    padding: 15px 0 30%;
+  }
+  .top__wrapper {
+    align-items: flex-end;
   }
 }

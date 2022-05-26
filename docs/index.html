@@ -15,33 +15,42 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/main.css?t=1653568389143" />
+    <link rel="stylesheet" href="css/main.css?t=1653588031503" />
   </head>
 
   <body>
     <header class="header">
   <div class="container">
-    <div class="header__inner">
-      <a href="#top" class="logo">
-<picture><source srcset="../../img/logo/logo.avif" type="image/avif"><source srcset="../../img/logo/logo.webp" type="image/webp"><img src="../../img/logo/logo.png" alt="Mavic 2 Pro" class="logo__img" /></picture>
-<picture><source srcset="../../img/logo/logo-mobile.avif" type="image/avif"><source srcset="../../img/logo/logo-mobile.webp" type="image/webp"><img src="../../img/logo/logo-mobile.png" alt="Mavic 2 Pro" class="logo__img-mobile" /></picture>
-      </a>
+    <div class="header__inner" id="header__navigation">
+      <div data-menuanchor="top">
+        <a href="#top" class="logo">
+<picture><source srcset="../../img/logo/logo.avif" type="image/avif"><source srcset="../../img/logo/logo.webp" type="image/webp"><img src="../../img/logo/logo.png" alt="Mavic 2 Pro" class="logo__img"/></picture>
+<picture><source srcset="../../img/logo/logo-mobile.avif" type="image/avif"><source srcset="../../img/logo/logo-mobile.webp" type="image/webp"><img src="../../img/logo/logo-mobile.png" alt="Mavic 2 Pro" class="logo__img-mobile"/></picture>
+        </a>
+      </div>
+      
       <nav class="menu">
+        <button class="menu__btn">
+          <span class="menu__btn-line"></span>
+        </button>
         <ul class="menu__list">
-          <li class="menu__list-item">
+          <li class="menu__list-item" data-menuanchor="products">
             <a href="#products" class="menu__list-link">О ДРОНЕ</a>
           </li>
-          <li class="menu__list-item">
+          <li class="menu__list-item" data-menuanchor="benefits">
             <a href="#benefits" class="menu__list-link">ПРЕИМУЩЕСТВА</a>
           </li>
-          <li class="menu__list-item">
+          <li class="menu__list-item"data-menuanchor="specification">
             <a href="#specification" class="menu__list-link">ХАРАКТЕРИСТИКИ</a>
           </li>
-          <li class="menu__list-item">
+          <li class="menu__list-item"data-menuanchor="questions">
             <a href="#questions" class="menu__list-link">ВОПРОСЫ</a>
           </li>
-          <li class="menu__list-item">
+          <li class="menu__list-item"data-menuanchor="contacts">
             <a href="#contacts" class="menu__list-link">КОНТАКТЫ</a>
+          </li>
+          <li class="menu__list-phone">
+            <a href="tel:80505676767" class="header__phone-menu">8 (050) 567 67 67</a>
           </li>
         </ul>
       </nav>
@@ -54,7 +63,7 @@
 </header>
 
     <main id="fullPage">
-      <section class="page-section top section" id="top">
+      <section class="page-section top section" data-anchor="top">
   <div class="page-section__wrapper top__wrapper">
     <div class="container">
       <div class="top__inner">
@@ -89,7 +98,7 @@
     </div>
   </div>
 </section>
- <section class="page-section products section" id="products">
+ <section class="page-section products section" data-anchor="products">
   <div class="page-section__wrapper">
     <div class="container">
       <h3 class="title products__title">Что такое Mavic 2 Pro?</h3>
@@ -157,7 +166,7 @@
   </div>
 </section>
 
-      <section class="page-section benefits section" id="benefits">
+      <section class="page-section benefits section" data-anchor="benefits">
   <div class="page-section__wrapper">
     <div class="container">
       <h3 class="title benefits__title">Преимущества</h3>
@@ -227,7 +236,7 @@
     </div>
   </div>
 </section>
- <section class="page-section specification section" id="specification">
+ <section class="page-section specification section" data-anchor="specification">
   <div class="page-section__wrapper">
   <div class="container">
     <h3 class="title specification__title">Характеристики</h3>
@@ -279,7 +288,7 @@
   </div>
 </section>
 
-      <section class="page-section questions section" id="questions">
+      <section class="page-section questions section" data-anchor="questions">
   <div class="page-section__wrapper">
     <div class="container">
       <h3 class="title questions__title">Остались вопросы?</h3>
@@ -336,7 +345,7 @@
     </div>
   </div>
 </section>
- <section class="page-section contacts section" id="contacts">
+ <section class="page-section contacts section" data-anchor="contacts">
   <div class="page-section__wrapper">
     <div class="container">
       <h3 class="title contacts__title">Контакты</h3>
@@ -423,17 +432,12 @@
         </div>
       </footer>
     </div>
-    <div class="contacts__scroll scroll">
-      <a href="#" class="scroll__link">
-        <img src="../../img/icon/arrow-down.svg" alt="arrow" />
-      </a>
-    </div>
   </div>
 </section>
 
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- <script src="js/libs.min.js"></script> -->
-    <script src="js/main.js?t=1653568389143"></script>
+    <script src="js/main.js?t=1653588031503"></script>
   </body>
 </html>

@@ -69,3 +69,61 @@
     @extend %ubuntu-lightd;
   }
 }
+@media (max-width: 1366px) {
+  .specification__box-2,
+  .specification__box-4 {
+    margin-top: 115px;
+  }
+  .specification__item--center {
+    text-align: center;
+    margin-top: -55px;
+    img {
+      width: 80%;
+    }
+  }
+}
+@media (max-width: 1160px) {
+  .specification__box-3::before {
+    width: 190px;
+    height: 78px;
+    left: -230px;
+    top: 44px;
+  }
+  .specification__box-2::before {
+    width: 310px;
+    height: 93px;
+    right: -238px;
+  }
+}
+@media (max-width: 1024px) {
+  .specification__box-1::before,
+  .specification__box-2::before,
+  .specification__box-3::before,
+  .specification__box-4::before {
+    display: none;
+  }
+}
+@media (max-width: 877px) {
+  .specification__box-2,
+  .specification__box-4 {
+    margin-top: 50px;
+  }
+  .specification__inner {
+    padding-left: 0;
+  }
+}
+@media (max-width: 787px) {
+  .specification__inner {
+    display: block;
+  }
+  .specification__box {
+    width: 100%;
+  }
+  .specification__box-2,
+  .specification__box-4 {
+    margin-top: 25px;
+  }
+  .specification__item--center {
+    margin-top: 0px;
+  }
+}
